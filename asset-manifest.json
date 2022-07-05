@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wepoPriceCalculator/static/css/main.c49fe337.css",
+    "main.js": "/wepoPriceCalculator/static/js/main.e3df137e.js",
+    "static/js/787.86bf2a97.chunk.js": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js",
+    "static/media/logo.svg": "/wepoPriceCalculator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/wepoPriceCalculator/index.html",
+    "main.c49fe337.css.map": "/wepoPriceCalculator/static/css/main.c49fe337.css.map",
+    "main.e3df137e.js.map": "/wepoPriceCalculator/static/js/main.e3df137e.js.map",
+    "787.86bf2a97.chunk.js.map": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c49fe337.css",
+    "static/js/main.e3df137e.js"
+  ]
+}

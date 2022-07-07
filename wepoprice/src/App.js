@@ -1,30 +1,10 @@
 import React from 'react'
-import logo from './logo.svg';
+import logo from './weposvg.svg';
 
 import './App.css';
 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src="appIcon.png" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <img src="./appIcon.png"></img>
-      </header>
-    </div>
-  );
-}
+
 class MyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -57,11 +37,14 @@ this.setState({
   render() {
     return (
       <body className='Main'>
-        <h1>WEPO Price Calculator</h1>
+        <div className="title-container">
+        <img id="wepo-logo"src={logo}></img>
+        <h2>Price Calculator</h2>
+        </div>
         <div className='calculator'>
           <form onSubmit={this.handleSubmit} className="form">
             <input value={this.state.input} onChange={this.handleChange} placeholder="Input the buying price here"/>
-            <button type='submit'>Submit!</button>
+            <button id="submit" type='submit'>Calculate!</button>
           </form>
             <div className='result-container'>
               <div className='result'>

@@ -33,7 +33,7 @@ code {
 }
 .calculator{
   padding: 1rem;
-  width: 75%;
+  width: 380px;
   height: 20rem;
   background-color: rgba(240, 240, 240,1);
   margin: auto;

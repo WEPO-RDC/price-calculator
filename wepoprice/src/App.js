@@ -43,7 +43,7 @@ this.setState({
         </div>
         <div className='calculator'>
           <form onSubmit={this.handleSubmit} className="form">
-            <input value={this.state.input} onChange={this.handleChange} placeholder="Input the buying price here"/>
+            <input value={this.state.input} onChange={this.handleChange} placeholder="Input the buying price in KRW here"/>
             <button id="submit" type='submit'>Calculate!</button>
           </form>
             <div className='result-container'>

@@ -1,15 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 .Main{
@@ -18,57 +13,4 @@ code {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.title-container{
-  margin-top: 25px;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-#wepo-logo{
-  width:3rem;
-  padding-right: 15px;
-}
-.calculator{
-  padding: 1rem;
-  width: 380px;
-  height: 20rem;
-  background-color: rgba(240, 240, 240,1);
-  margin: auto;
-  border-radius: 3px;
-}
-#submit{
-  border: 0.5px solid rgb(36, 36, 36);
-  background-color: #40B3FA;
-  border-radius: 3px;
-  padding: 5px;
-
-
-}
-.form{
-  margin: auto;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.form input, .form button{
-  padding: 0.2rem;
-  margin: 0.3rem
-}
-
-.result-container{
-  display: flex;
-  flex-direction: row;
-}
-
-.result{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

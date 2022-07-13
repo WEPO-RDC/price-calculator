@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap');
 .App {
   text-align: center;
 }
-
+#root{
+  font-family: "Montserrat", sans-serif ;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,93 @@
   to {
     transform: rotate(360deg);
   }
+}
+.center p{
+  margin: auto;
+  text-align: center;
+}
+
+.title-container{
+  margin-top: 25px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#wepo-logo{
+  width:3rem;
+  padding-right: 15px;
+}
+.calculator{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: fit-content;
+  background-color: rgb(248, 248, 248);
+  margin: auto;
+  border-radius: 3px;
+  padding-bottom: 2rem;
+}
+#submit{
+  border: 0.5px solid rgb(36, 36, 36);
+  background-color: #40B3FA;
+  border-radius: 3px;
+  padding: 5px;
+
+
+}
+.form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form input, .form button{
+  padding: 0.2rem;
+  margin: 0.3rem
+}
+
+.result-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 20px 0px 20px
+}
+
+.result h1{
+  margin:0.5rem;
+  font-size: 1.6rem
+}
+.priceUsd{
+  margin: 1rem 0rem 1rem;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.priceUsd h3, .priceUsd p{
+  margin-top: 0.5rem;
+  margin-bottom: 0rem
+  
+}
+
+.priceUsd h3{
+  font-size: 0.8rem;
+}
+.calculator span{
+  color: rgb(6, 6, 146);
+  font-weight: 500;
+}
+.priceUsd p{
+  font-size: 0.7rem
 }

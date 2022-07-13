@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wepoPriceCalculator/static/css/main.4eca8968.css",
-    "main.js": "/wepoPriceCalculator/static/js/main.05b8cdcc.js",
+    "main.css": "/wepoPriceCalculator/static/css/main.ea13d352.css",
+    "main.js": "/wepoPriceCalculator/static/js/main.7009d2b0.js",
     "static/js/787.86bf2a97.chunk.js": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js",
     "static/media/weposvg.svg": "/wepoPriceCalculator/static/media/weposvg.3ade083a7048298b7a626c4feec1c33c.svg",
     "index.html": "/wepoPriceCalculator/index.html",
-    "main.4eca8968.css.map": "/wepoPriceCalculator/static/css/main.4eca8968.css.map",
-    "main.05b8cdcc.js.map": "/wepoPriceCalculator/static/js/main.05b8cdcc.js.map",
+    "main.ea13d352.css.map": "/wepoPriceCalculator/static/css/main.ea13d352.css.map",
+    "main.7009d2b0.js.map": "/wepoPriceCalculator/static/js/main.7009d2b0.js.map",
     "787.86bf2a97.chunk.js.map": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eca8968.css",
-    "static/js/main.05b8cdcc.js"
+    "static/css/main.ea13d352.css",
+    "static/js/main.7009d2b0.js"
   ]
 }

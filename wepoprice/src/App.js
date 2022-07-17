@@ -8,14 +8,25 @@ import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 
 let curr = 0
+
 const url ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/krw/usd.json"
-const navUrl = "https://openapi.naver.com/v1/search/shop.json"
+const navUrl = "https://openapi.naver.com/v1/search/shop.xml?query=iphone&display=10&start=1&sort=asc"
+
+const options ={
+  method:'GET',
+  headers: {
+    'X-Naver-Client-Id': REACT_APP_CLIENT_ID,
+    'X-Naver-Client-Secret': REACT_APP_CLIENT_KEY
+  }
+}
 const prices = {
   input:'',
   usd: "",
   dhl: "",
   fedex: ""
 }
+
+
 
 function Page() {
   const [price, setPrice] = useState(prices)
@@ -27,8 +38,13 @@ function Page() {
     .then(function(res){
       curr = Number(res.usd)
     })
-  },[])
+  },[input])
 
+\
+
+ 
+
+ 
  
 
   useEffect(()=>{
@@ -44,15 +60,14 @@ function Page() {
   }
     )
   }, [input])
+
   function handleChange(event) {
-    event.preventDefault()
     setInput(prev =>
        event.target.value.replace(/\D+/g, '')
         /*noNumber.test(event.target.value)===true 
         ? event.target.value.match(check).join('').length>0 ? event.target.value.match(check).join(''):0
         : event.target.value) */
     )
-    event.preventDefault()
 
     
 
@@ -71,6 +86,7 @@ function Page() {
       }
     })
   }*/
+  
     
     return (
       <div className='Main'>

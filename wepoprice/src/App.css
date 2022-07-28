@@ -7,7 +7,13 @@ body{
 
 
 
-
+.Main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  width: 100%;
+}
 .center p{
   margin: auto;
   text-align: center;
@@ -28,14 +34,14 @@ body{
   border-right: 1px solid black;
 }
 .calculator{
-  padding: 1rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 360px;
+  justify-content: center;
   height: fit-content;
   background-color: rgb(248, 248, 248);
-  margin: auto;
   border-radius: 3px;
   padding-bottom: 2rem;
   border: 0.5px solid rgb(238, 237, 237);
@@ -44,12 +50,12 @@ body{
   border: 0.5px solid rgb(36, 36, 36);
   background-color: #40B3FA;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 0px;
 
 
 }
 .form{
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
 justify-content: center;
@@ -137,7 +143,7 @@ hr{
 .bg {
   font-family: "Montserrat", sans-serif ;  
   margin:auto;
-  margin-top: 50px;
+  margin-top: 30px;
   background: rgb(248, 248, 248);;
   width: 340px;
   height: 450px;
@@ -217,4 +223,12 @@ hr{
 #equal{
   height: 40px;
   color: red;
+}
+
+.Activ{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

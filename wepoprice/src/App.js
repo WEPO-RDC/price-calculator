@@ -7,6 +7,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import Calculator from './components/Calculator'
+import { selectClasses } from '@mui/material';
 let curr = 0
 
 const url =""
@@ -31,12 +32,20 @@ const prices = {
   dhl: "",
   fedex: ""
 }
-
+function Calc(props){
+  return(
+    <div className="Activ">
+      <button onClick= {props.click}>{props.value}</button>
+      {props.calc && <Calculator/>}
+    </div>
+  )
+}
 
 function Page() {
   const [price, setPrice] = useState(prices)
   const [input, setInput] = useState("")
   const [forex, setForex] = useState()
+  const [calc, selectCalc] = useState(false)
   
   useEffect(function(){
     fetch("https://api.apilayer.com/exchangerates_data/latest?symbols=USD%2CCDF&base=KRW", requestOptions)
@@ -51,7 +60,9 @@ function Page() {
 
 
  
-
+  function activateCalc(){
+    selectCalc(prev => !prev)
+  }
 
  
 
@@ -137,7 +148,12 @@ function Page() {
 
             
         </div>
-        <Calculator/>
+        { calc
+        ?(
+          <Calc calc = {calc} click={activateCalc}value = "Deactivate calculator"/>
+          )
+          :<Calc calc = {calc} click={activateCalc} value="Use calculator"/>
+          }
         <footer style={{margin:'auto', width: '300px', display:'flex', justifyContent:'center'}}>
           <p style={{padding:'4rem 0rem 2rem', position:'relative', bottom:'0px',fontSize:'10px'}}>© WEPO 2022</p>
         </footer>

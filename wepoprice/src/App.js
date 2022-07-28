@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
-
+import Calculator from './components/Calculator'
 let curr = 0
 
 const url =""
@@ -24,16 +24,7 @@ var requestOptions = {
 
 
 
-const options ={
-  method:'GET',
-  headers:{
-    'HOST':'openapi.naver.com',
-    'Content-Type': 'plain/text',
-    'X-Naver-Client-Id':'48kv9EUazWt_Cx52Wlf0',
-    'X-Naver-Client-Secret': 'sx8P7Xrt6d'
-  },
-  mode: 'cors'
-}
+
 const prices = {
   input:'',
   usd: "",
@@ -41,22 +32,18 @@ const prices = {
   fedex: ""
 }
 
-const headersI ={
-  'X-Naver-Client-Id': '48kv9EUazWt_Cx52Wlf0',
-  'X-Naver-Client-Secret': 'sx8P7Xrt6d'
-}
 
 function Page() {
   const [price, setPrice] = useState(prices)
   const [input, setInput] = useState("")
-  const [forex, setForex] = useState({})
+  const [forex, setForex] = useState()
   
   useEffect(function(){
     fetch("https://api.apilayer.com/exchangerates_data/latest?symbols=USD%2CCDF&base=KRW", requestOptions)
   .then(response => response.json())
   .then(result => {
-    console.log(result.rates)
-    setForex(() => result.rates)
+    console.log(result.rates.USD)
+    setForex(() => result.rates.USD)
   })
   .catch(error => console.log('error', error));
 
@@ -73,11 +60,11 @@ function Page() {
 
   useEffect(()=>{
     setPrice(prev => {
-      let wonToUsd = Number(input) * forex.USD
+      let wonToUsd = Number(input) * forex
       return{
         ...prev,
         input:Number(input),
-        usd: (Number(input) * forex.USD).toFixed(1),
+        usd: (Number(input) * forex).toFixed(1),
         dhl: ((wonToUsd + 45) / .7).toFixed(1),
         fedex: ((wonToUsd + 33) / .7).toFixed(1),
       }
@@ -100,16 +87,6 @@ function Page() {
     event.preventDefault()
     
   }
-  /*function handleSubmit(event){
-    setPrice( prev =>{
-      event.preventDefault()
-      return{
-        ...prev,
-        dhl: prev.input * 10,
-        fedex: prev.input + 10
-      }
-    })
-  }*/
   
     
     return (
@@ -119,7 +96,7 @@ function Page() {
         <h3>Price Calculator</h3>
         </div>
         <div className='calculator'>
-            {forex.USD!==0 &&<p>Exchange rate: <span>1$ = {forex.USD} ₩</span></p>}
+            {forex!==0 &&<p>Exchange rate: <span>1$ ={forex} ₩</span></p>}
           
             <form onSubmit={updateObject} className="form">
               <FormControl fullWidth sx={{ m: 1 }}>
@@ -160,6 +137,7 @@ function Page() {
 
             
         </div>
+        <Calculator/>
         <footer style={{margin:'auto', width: '300px', display:'flex', justifyContent:'center'}}>
           <p style={{padding:'4rem 0rem 2rem', position:'relative', bottom:'0px',fontSize:'10px'}}>© WEPO 2022</p>
         </footer>

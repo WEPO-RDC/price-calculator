@@ -7,35 +7,7 @@ body{
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .wepo-logo {
-    animation: App-logo-spin infinite 30s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .center p{
   margin: auto;
   text-align: center;
@@ -149,14 +121,100 @@ hr{
     align-items: center;
     margin:auto;
   }
-  .calculator{
-    margin: auto;
-    width:100%;
-    padding: 2rem 0rem;
-  }
+ 
   .form{
     display: flex;
 
   }
   
+}
+
+
+/*END*/
+
+
+
+.bg {
+  font-family: "Montserrat", sans-serif ;  
+  margin:auto;
+  margin-top: 50px;
+  background: rgb(248, 248, 248);;
+  width: 340px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 30px 10px 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgb(230, 230, 230);
+}
+
+.result {
+  background: white;
+  width: 90%;
+  height: 11%;
+  border-radius: 2px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:0px 10px;
+  justify-content: space-between;
+  border: 1.5px solid rgb(200,200,200);
+}
+.result p{
+  all: unset;
+  font-size: 1px;
+  font-family: "Montserrat", sans-serif ;
+}
+#res{
+  font-family: "Montserrat", sans-serif ;
+  color: rgb(1,5,100);
+  font-size:22px;
+
+}
+.input {
+  font-family: "Montserrat", sans-serif ;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  height: 70%;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.digit {
+  display: grid;
+  grid-template: auto auto / repeat(3, 1fr);
+  width: 80%;
+  height: 100%;
+  gap: 5px;
+
+}
+
+.button {
+  font-family: "Montserrat", sans-serif ;
+  width: 90%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.operator {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: s;
+}
+#plus {
+  height: 30px;
+}
+
+#equal{
+  height: 40px;
+  color: red;
 }

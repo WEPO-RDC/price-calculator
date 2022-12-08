@@ -72,12 +72,14 @@ function Page() {
   useEffect(()=>{
     setPrice(prev => {
       let wonToUsd = Number(input) * forex
+      let Tax = wonToUsd * 6 / 100
+      let transport = 5
       return{
         ...prev,
         input:Number(input),
         usd: (Number(input) * forex).toFixed(1),
-        dhl: ((wonToUsd + 45) / .7).toFixed(1),
-        fedex: ((wonToUsd + 33) / .7).toFixed(1),
+        dhl: ((wonToUsd + Tax + transport + 30 ) / .7).toFixed(1),
+        fedex: ((wonToUsd + Tax + transport + 18) / .7).toFixed(1),
       }
   }
     )

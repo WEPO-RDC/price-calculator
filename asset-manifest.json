@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wepoPriceCalculator/static/css/main.c6f748a8.css",
-    "main.js": "/wepoPriceCalculator/static/js/main.3e371fd0.js",
-    "static/js/787.86bf2a97.chunk.js": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js",
-    "static/media/weposvg.svg": "/wepoPriceCalculator/static/media/weposvg.3ade083a7048298b7a626c4feec1c33c.svg",
-    "index.html": "/wepoPriceCalculator/index.html",
-    "main.c6f748a8.css.map": "/wepoPriceCalculator/static/css/main.c6f748a8.css.map",
-    "main.3e371fd0.js.map": "/wepoPriceCalculator/static/js/main.3e371fd0.js.map",
-    "787.86bf2a97.chunk.js.map": "/wepoPriceCalculator/static/js/787.86bf2a97.chunk.js.map"
+    "main.css": "/price-calculator/static/css/main.c6f748a8.css",
+    "main.js": "/price-calculator/static/js/main.dda79cff.js",
+    "static/js/787.86bf2a97.chunk.js": "/price-calculator/static/js/787.86bf2a97.chunk.js",
+    "static/media/weposvg.svg": "/price-calculator/static/media/weposvg.3ade083a7048298b7a626c4feec1c33c.svg",
+    "index.html": "/price-calculator/index.html",
+    "main.c6f748a8.css.map": "/price-calculator/static/css/main.c6f748a8.css.map",
+    "main.dda79cff.js.map": "/price-calculator/static/js/main.dda79cff.js.map",
+    "787.86bf2a97.chunk.js.map": "/price-calculator/static/js/787.86bf2a97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6f748a8.css",
-    "static/js/main.3e371fd0.js"
+    "static/js/main.dda79cff.js"
   ]
 }
